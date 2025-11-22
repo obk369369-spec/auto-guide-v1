@@ -157,7 +157,7 @@ button:hover:not([disabled]) {
 
 .status-box pre {
   margin: 0;
-  max-height: 140px;
+  max-height: 160px;
   overflow: auto;
   white-space: pre-wrap;
 }
@@ -173,6 +173,23 @@ button:hover:not([disabled]) {
   border: 1px solid #333;
   padding: 3px 4px;
   vertical-align: top;
+}
+
+.status-box th {
+  background: #181818;
+}
+
+#priorityTable {
+  max-height: 260px;
+  overflow: auto;
+  display: block;
+}
+
+#priorityTable thead,
+#priorityTable tbody {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
 }
 
 .sidebar {
@@ -226,6 +243,11 @@ button:hover:not([disabled]) {
 .sr-only {
   position: absolute;
   left: -9999px;
+}
+
+#fileList {
+  margin: 0;
+  padding-left: 16px;
 }
 
 @media (max-width: 900px) {
